@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Choose K Value</title>
+</head>
+<body>
+<nav>
+<a href="{{ url_for('selectpage') }}">Select</a>
+
+</nav>
+</nav>
+<p> My Name is: Akhil Ghosh </p>
+<p> My ID is:1001505606 </p>
+<br>
+ {% if data %}
+<table>
+         {% for row in data %}
+        <tr>
+	{% for r in row %}
+	<td>{{ r }}</td>
+	{% endfor %}
+
+    </tr>
+        {% endfor %}
+    </table>
+{% endif %}
+
+</body>
+</html>
